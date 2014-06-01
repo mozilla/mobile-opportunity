@@ -1,7 +1,7 @@
 doctype
 html
   head
-    link(rel="stylesheet" href="main.css")
+    link(rel="stylesheet" href="/main.css")
   body
     .wrapper
         header
@@ -11,18 +11,24 @@ html
             p This website documents the ongoing work by the Mobile Opportunity project team at Mozilla.
             
             h3
-                a(href="goals") Goals
+                a(href="/goals") Goals
             h3 
-                a(href="approach") Approach
+                a(href="/approach") Approach
             h3 
-                a(href="plan") Plan
+                a(href="/plan") Plan
+            h3 
+                a(href="/voices") Voices
             h3
-                a(href="docs") Mockups, Demos & Reports
+                a(href="/docs") Mockups, Demos & Reports
             p Our work is public.  You can track our
               <a href="wiki.mozilla.org/Mobile_Opportunity">wiki documentation</a>
               , as well as our <a href="https://github.com/mozilla/mobile-opportunity/issues/milestones">issue tracking</a>.
               
             p This website is authored in github, edits via <a href="https://github.com/mozilla/mobile-opportunity/tree/gh-pages/_harp">pull requests</a> or <a href="https://github.com/mozilla/mobile-opportunity/issues/new">issues</a> are welcome.
 
+
     section
         != yield
+    
+        != partial("_comments")
+
