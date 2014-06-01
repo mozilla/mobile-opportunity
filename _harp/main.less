@@ -3,8 +3,62 @@
 body {
   padding:50px;
   font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#777;
+  color:#444;
   font-weight:300;
+}
+
+.sidebar {
+    border: 1px solid gray;
+    padding: 1em;
+    margin: 1em;
+    padding-bottom: 0;
+    margin-left: 5em;
+    display: right;
+    background: rgba(255, 243, 0, 0.11);
+}
+
+blockquote {
+    background: #f9f9f9;
+    font-size: large;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    line-height: .2em;
+    padding: 0.5em 10px;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    padding-right: 12px;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.15em;
+    vertical-align: -.6em;
+}
+blockquote p {
+  display: inline;
+}
+
+.done {
+    color: rgba(18, 18, 129, 1)
+}
+
+.update {
+    background: #ddd;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    margin-bottom: 1em;
+}
+div.quoter {
+    padding-top: 2em;
+    display: block;
+    text-align: right;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -34,10 +88,12 @@ h3, h4, h5, h6 {
 
 a {
   color:#39c;
-  font-weight:400;
   text-decoration:none;
 }
 
+p a {
+  font-weight:400;
+}    
 a small {
   font-size:11px;
   color:#777;
@@ -50,13 +106,13 @@ a small {
   margin:0 auto;
 }
 
-blockquote {
-  border-left:1px solid #e5e5e5;
-  margin:0;
-  padding:0 0 0 20px;
-  font-style:italic;
-}
-
+//blockquote {
+//  border-left:1px solid #e5e5e5;
+//  margin:0;
+//  padding:0 0 0 20px;
+//  font-style:italic;
+//}
+//
 code, pre {
   font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
   color:#333;
