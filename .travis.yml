@@ -8,3 +8,5 @@ node_js:
   - 0.10
 
 script: "harp compile _harp ./"
+after_success:
+- .utility/initiate-publish.sh
