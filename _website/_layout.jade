@@ -2,11 +2,13 @@ doctype
 html
   head
     title Mobile Opportunity Project
+    <link href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" />
     if environment != "development"
         base(href="https://mozilla.github.io/mobile-opportunity/")
     else
         base(href="/")
     link(rel="stylesheet" href="main.css")
+  <a href="https://www.mozilla.org/" id="tabzilla">mozilla</a>
   body
     .wrapper
         header
@@ -38,3 +40,5 @@ html
     
         != partial("_comments")
 
+footer
+    <script src="//mozorg.cdn.mozilla.net/tabzilla/tabzilla.js"></script>
