@@ -7,7 +7,7 @@ language: node_js
 node_js:
   - 0.10
 
-script: "harp compile _harp _website"
+script: "harp compile _website _built_website"
 after_success:
 - ls
 - ls utility
