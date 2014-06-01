@@ -2,8 +2,6 @@
 
 echo -e "Publishing website...\n"
 
-  cp -R _harp $HOME/site-latest
-
   cd $HOME
   git config --global user.email "travis@travis-ci.org"
   git config --global user.name "travis-ci"
@@ -11,7 +9,7 @@ echo -e "Publishing website...\n"
 
   cd gh-pages
   git rm -rf .
-  cp -Rf $HOME/site-latest .
+  cp -Rf $HOME/_website .
   git add -f .
   git commit -m "Lastest harp compiled site on successful travis build $TRAVIS_BUILD_NUMBER auto-pushed to gh-pages"
   git push -fq origin gh-pages > /dev/null

@@ -7,7 +7,7 @@ language: node_js
 node_js:
   - 0.10
 
-script: "harp compile _harp ./"
+script: "harp compile _harp _website"
 after_success:
 - echo $CWD
 - cd ..
