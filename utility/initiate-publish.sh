@@ -1,7 +1,5 @@
 #!/bin/bash
 
-if [ "$TRAVIS_REPO_SLUG" == "mozilla/mobile-opportunity" ] && [ "$TRAVIS_BRANCH" == "master" ]; then
-
 echo -e "Publishing website...\n"
 
   cp -R _harp $HOME/site-latest
