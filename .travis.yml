@@ -1,6 +1,12 @@
+env:
+  global:
+    secure: APJlMhvfTnqmYtQA9xev4HFlco1ucw7xikUaL4Bwx9gbsDGrzSWgJYDmMYu2mBgc6s+rSD8OFm51lVDtfXVdfmMs4dsuOAWxcXGPnr3SCmDovmbpIqdQXV3c2k1nGSVdhsH2yvA0rhWzGVTbWQxzuyHlBteRhFKOmJreXilpzL4=
+
 language: node_js
+
+# test on two node.js versions: 0.6 and 0.8
 node_js:
-  - "0.11"
-"scripts": {
-  "test": "harp compile _harp ./"
-},
+  - 0.6
+  - 0.8
+
+
