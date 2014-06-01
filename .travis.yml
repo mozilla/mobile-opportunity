@@ -9,8 +9,6 @@ node_js:
 
 script: "harp compile _harp _website"
 after_success:
-- echo $CWD
-- cd ..
 - ls
 - ls utility
 - source ./utility/initiate-publish.sh
