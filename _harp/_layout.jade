@@ -1,13 +1,16 @@
 doctype
 html
   head
+    if environment != "development"
+        base(href="https://mozilla.github.io/mobile-opportunity/")
     link(rel="stylesheet" href="/main.css")
   body
     .wrapper
         header
             h1 
                 a(href="/") Mobile Opportunity Research
-
+            if environment == "development"
+                p Okay, Harp is in development mode right now.  
             p This website documents the ongoing work by the Mobile Opportunity project team at Mozilla.
             
             h3
