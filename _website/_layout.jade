@@ -3,12 +3,10 @@ html
   head
     <meta name="viewport" content="width=device-width, user-scalable=no, target-densityDpi=device-dpi">
     title Mobile Opportunity Project
-    <link href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" />
     if environment != "development"
         base(href="https://mozilla.github.io/mobile-opportunity/")
     else
         base(href="/")
-    link(rel="stylesheet" href="main.css")
   <a href="https://www.mozilla.org/" id="tabzilla">mozilla</a>
   body
     .wrapper
@@ -44,4 +42,6 @@ html
         != partial("_comments")
 
 footer
+    <link href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" />
+    link(rel="stylesheet" href="main.css")
     <script src="//mozorg.cdn.mozilla.net/tabzilla/tabzilla.js"></script>
