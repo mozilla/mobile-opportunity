@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/mozilla/mobile-opportunity/issues"
   },
-  "homepage": "https://github.com/mozilla/mobile-opportunity"
+  "homepage": "https://github.com/mozilla/mobile-opportunity",
+  "dependencies": {
+    "harp": "^0.12.1"
+  }
 }
