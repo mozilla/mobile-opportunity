@@ -10,6 +10,7 @@ node_js:
 script: "harp compile _harp ./"
 after_success:
 - echo $CWD
+- cd ..
 - ls
 - ls utility
-- source $HOME/utility/initiate-publish.sh
+- source ./utility/initiate-publish.sh
