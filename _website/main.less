@@ -1,5 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
-
 body {
 //  padding:50px;
 //  padding-top: 0px;
@@ -21,6 +19,7 @@ body b {
     border: 1px solid gray;
     padding: 1em;
     padding-bottom: 0;
+    margin-bottom: 1em;
     display: right;
     background: rgba(255, 243, 0, 0.11);
 }
@@ -78,9 +77,10 @@ ul.planlist li {
    text-indent: -1.2em;
 }
 
-.done {
+.done span {
   color: rgba(18, 18, 129, .6);
   font-style: italic;
+  text-decoration:line-through;
 }
 
 .done:before {
@@ -111,6 +111,13 @@ div.quoter {
 h1, h2, h3, h4, h5, h6 {
   color:#222;
   margin:0 0 20px;
+}
+
+h1 {
+  padding-top: 50px;
+  margin-top: -50px;
+  -webkit-background-clip: content-box;
+  background-clip: content-box;
 }
 
 p, ul, ol, table, pre, dl {
