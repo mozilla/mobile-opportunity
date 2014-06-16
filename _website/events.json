@@ -1,0 +1,27 @@
+{
+  "events": [
+    {"date": "2014-06-16", 
+     "title": "Mozilla project intro" }
+    ,{"date": "2014-06-20", 
+     "title": "Mozcamp Bangalore",
+     "url": "https://wiki.mozilla.org/MozCamps_2014#MozCamp_Beta_-_India"}
+    ,{"date": "2014-06-17", 
+     "title": "Technovation SF",
+     "url": "https://emgollie.makes.org/thimble/LTkyNDUxNjM1Mg==/technovation-appmaker-session-teaching-kit-template"}
+    ,{"startDate": "2014-06-16",
+      "endDate": "2014-06-17",
+     "title": "GSMA Meeting, London" }
+    ,{"date": "2014-07-15", 
+     "title": "MakerParty Starts",
+     "url": "http://party.webmaker.org/"}
+    ,{"startDate": "2014-08-19",
+      "endDate": "2014-08-21",
+     "title": "GSMA M4D WG, Dhaka" }
+    ,{"startDate": "2014-10-24",
+      "endDate": "2014-10-26",
+     "title": "MozFest, London" }
+    ,{"startDate": "2014-11-05",
+      "endDate": "2014-11-07",
+     "title": "GSMA, Cape Town" }
+  ]
+}

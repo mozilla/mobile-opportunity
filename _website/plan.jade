@@ -1,3 +1,9 @@
+script(src="js/json2.js")
+script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
+script(src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js")
+script(src="js/moment-2.5.1.js")
+script(src="js/clndr.min.js")
+script(src="js/site.js")
 h1#plan Plan of record
 
 blockquote
@@ -21,6 +27,43 @@ h3 Foundation Setting
 ul.planlist
   li.future This phase is all about clarifying goals, approaches, plans, resourcing model, budget, contribution and communication models, program management approach, etc.
 
-h3 Review of foundational market and user research
+h1 Calendar of Events
 
-h3 Initial hypothesis testing
+link(rel="stylesheet",href="styles/clndr.css")
+script(type="text/template",id="template-calendar").
+  <div class='clndr-controls'>
+    <div class='clndr-control-button'><span class='clndr-previous-button'>previous</span></div><div class='month'><%= month %> <%= year %></div><div class='clndr-control-button rightalign'><span class='clndr-next-button'>next</span></div>
+    </div>
+  <table class='clndr-table' border='0' cellspacing='0' cellpadding='0'>
+    <thead>
+    <tr class='header-days'>
+    <% for(var i = 0; i < daysOfTheWeek.length; i++) { %>
+      <td class='header-day'><%= daysOfTheWeek[i] %></td>
+    <% } %>
+    </tr>
+    </thead>
+    <tbody>
+    <% for(var i = 0; i < numberOfRows; i++){ %>
+      <tr>
+      <% for(var j = 0; j < 7; j++){ %>
+      <% var d = j + i * 7; %>
+      <td class='<%= days[d].classes %>'><div class='day-contents'><%= days[d].day %> 
+      <% if (days[d].events.length) { %>
+        <% for(var k=0; k<days[d].events.length; k++){ %>
+          <p>
+          <%= days[d].events[k].title %>
+          </p>
+        <% } %>
+        <% } %>
+      </div></td>
+      <% } %>
+      </tr>
+    <% } %>
+    </tbody>
+  </table>
+
+div.cal1
+  foo
+
+div#day
+ul#events
